@@ -85,7 +85,7 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-renderPlotly({
+renderPlotly1({
   nyc_airbnb %>% 
     filter(boro == input$boro_choice, 
            price %in% input$price_range[1]:input$price_range[2],
